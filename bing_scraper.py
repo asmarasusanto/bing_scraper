@@ -1,3 +1,4 @@
+#!/bin/env python
 """Scrapes images from Bing images using a search term"""
 import argparse
 import requests
