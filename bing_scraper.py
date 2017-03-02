@@ -47,6 +47,7 @@ def write_imgs(imgs, dest):
                 # Copy to file in chunks
                 with open(path, 'wb') as f:
                    shutil.copyfileobj(r.raw, f)
+                f.close()
 
         except Exception as err:
             print("Could not write " + str(err))
@@ -64,6 +65,7 @@ def main():
     args = parser.parse_args()
 
     key = args.keyfile.readline().strip()
+    args.keyfile.close()
 
     imgs = []
     # Get n images
