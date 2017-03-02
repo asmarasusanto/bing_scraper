@@ -1,17 +1,20 @@
 # bing_scraper
-Python module for scraping bing images using Azure API
-usage: bing_scraper.py [-h] [--d D] keyfile term n
+Python module for scraping bing images using Azure API <br />
+<pre>
+usage: bing_scraper.py [-h] [--d D] keyfile term n 
 
-Scrape images from Bing Image Search.
+Scrape images from Bing Image Search. 
 
-positional arguments:
+positional arguments: 
   keyfile     File containing Azure API key.
-  term        Search term for parsing Bing images
-  n           Number of images to pull.
+  term        Search term for parsing Bing images 
+  n           Number of images to pull. 
 
-optional arguments:
-  -h, --help  show this help message and exit
-  --d D       Destination dir for writing images.
+optional arguments: <br />
+  -h, --help  show this help message and exit 
+  --d D       Destination dir for writing images. 
+  </pre>
+  <br />
   
   
   
