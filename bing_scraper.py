@@ -43,7 +43,7 @@ def write_imgs(imgs, dest):
     for i, img in enumerate(imgs):
         try:
             r = requests.get(img.thumbnail_url, stream=True)
-            path = dest + str(i) + '.' + img.encoding_format
+            path = dest + '/' + str(i) + '.' + img.encoding_format
             print('Writing: ' + path)
             if r.status_code == 200:
                 # Copy to file in chunks
